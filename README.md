@@ -24,8 +24,8 @@
 | [Before Maps](projects/before-maps.md) | Travel platform | Active | Next.js + Sanity |
 | [Hobie](projects/hobie.md) | Hobby tracker PWA | Active | Vite + React + Supabase |
 | [Ms Paul Therapies](projects/ms-paul-therapies.md) | Therapy website | Active | Next.js + Sanity |
-| [Uddip Content](projects/uddip-content.md) | Content library | Active | 2,100+ markdown files |
-| [Aishani Content](projects/aishani-content.md) | Content library | Active | 700+ markdown files |
+| [Uddip Content](projects/uddip-content.md) | Content library | Active | 3,270+ markdown files + generated handbooks |
+| [Aishani Content](projects/aishani-content.md) | Content library | Active | 722 markdown files + generated practice handbook |
 
 ---
 
@@ -43,3 +43,10 @@
 | `DECISION_LOG.md` | Key decisions with rationale |
 | `ROADMAP.md` | Portfolio-level priorities and timeline |
 | `projects/` | Per-project summaries |
+
+## Generated Handbooks
+
+| Project | Start Here | Build Command |
+|---|---|---|
+| Uddip Content | `~/Documents/uddip content/_generated-handbooks/README.md` | `python3 'uddip content/tools/build_uddip_multi_handbooks.py' --profile uddip` |
+| Aishani Content | `~/Documents/aishani/_generated-handbooks/README.md` | `python3 'uddip content/tools/build_uddip_multi_handbooks.py' --profile aishani` |

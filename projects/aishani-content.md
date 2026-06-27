@@ -14,7 +14,7 @@ Internal — used by Aishani Paul for her therapy practice content. The README i
 Not revenue-generating directly. Supports Ms Paul Therapies content marketing, digital products, and client resources.
 
 ## Technology
-Pure markdown repository. 700+ markdown files + 10 branded PDFs. No code, no build system.
+Pure markdown repository. 722 markdown files + 10 branded PDFs, with lightweight scripts/workbook templates for PDF and practice operations. Generated handbook output lives in `_generated-handbooks/`.
 
 ## Structure
 ```
@@ -37,7 +37,8 @@ Pure markdown repository. 700+ markdown files + 10 branded PDFs. No code, no bui
 ├── _knowledge-expansion/ → Knowledge base expansion
 ├── _life-architecture/   → Personal systems
 ├── _strategic-audit/     → Business audits
-└── Planner/              → Planning documents
+├── Planner/              → Planning documents
+└── _generated-handbooks/ → Generated Aishani Life & Practice OS handbook
 ```
 
 ## Roadmap
@@ -45,10 +46,12 @@ Pure markdown repository. 700+ markdown files + 10 branded PDFs. No code, no bui
 2. Monthly publishing cadence for Instagram + blog
 3. Launch 2 digital products (Q3)
 4. Workshop content development (Q4)
+5. Use the generated Aishani handbook as the practice/content/product/revenue/life OS review surface
 
 ## Dependencies
 - **Ms Paul Therapies** — All content feeds the therapy website
 - **GitHub** — Version control
+- **Uddip Content generator** — `~/Documents/uddip content/tools/build_uddip_multi_handbooks.py --profile aishani`
 
 ## Relationship to Other Projects
 - 1:1 content source for Ms Paul Therapies website
@@ -61,3 +64,5 @@ Pure markdown repository. 700+ markdown files + 10 branded PDFs. No code, no bui
 |---|---|
 | `README.md` | Repo overview + non-technical guide for Aishani |
 | `SITEMAP.md` | Complete file listing |
+| `_generated-handbooks/README.md` | Generated handbook index + source ledger |
+| `_generated-handbooks/01-AISHANI-LIFE-AND-PRACTICE-OS-HANDBOOK.md` | Master Aishani practice and life OS |

@@ -14,7 +14,7 @@ Internal — used by Uddip to publish across all platforms and brands.
 Not revenue-generating directly. Supports content marketing, digital product creation, and brand building for all three brands.
 
 ## Technology
-Pure markdown repository. No code, no build system, no dependencies. 2,100+ markdown files organized by brand and function.
+Pure markdown repository with one handbook generator script. 3,270+ markdown files organized by brand and function, plus generated operating handbooks in `_generated-handbooks/`.
 
 ## Structure
 ```
@@ -37,7 +37,9 @@ Pure markdown repository. No code, no build system, no dependencies. 2,100+ mark
 ├── proof/               → Social proof, case studies
 ├── shared/              → Shared assets
 ├── travel-startup/      → Travel business planning
-└── Planner/             → Planning documents
+├── Planner/             → Planning documents
+├── tools/               → Handbook generator
+└── _generated-handbooks/ → Generated Uddip operating handbook set
 ```
 
 ## Roadmap
@@ -45,10 +47,12 @@ Pure markdown repository. No code, no build system, no dependencies. 2,100+ mark
 2. 90-day content calendar execution
 3. Before Maps content seeding into Sanity CMS
 4. Digital product launches (HARP6X brand)
+5. Keep generated handbooks current using `tools/build_uddip_multi_handbooks.py --profile uddip`
 
 ## Dependencies
 - **Before Maps** — `before-maps/` folder feeds the Before Maps website
 - **GitHub** — Version control and collaboration
+- **Aishani Content** — same generator can build Aishani's generated handbook via `--profile aishani`
 
 ## Relationship to Other Projects
 - `before-maps/` folder directly feeds Before Maps Sanity CMS
@@ -62,4 +66,6 @@ Pure markdown repository. No code, no build system, no dependencies. 2,100+ mark
 | `README.md` | Repo overview, brand descriptions, structure |
 | `SITEMAP.md` | Complete file listing |
 | `_os/` | Operating system, strategy, calendars |
+| `_generated-handbooks/README.md` | Generated handbook index + source ledger |
+| `_generated-handbooks/05-EXECUTION-REVENUE-COMMAND-CENTER.md` | Recommended execution-first handbook |
 | `FOUNDER-STRATEGIC-REVIEW.md` | Multi-business audit |
